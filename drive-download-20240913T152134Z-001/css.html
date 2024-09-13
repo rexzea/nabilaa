@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pinkypie</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style type="text/css">
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .thumbnail {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            width: 225px;
+            margin: 10px;
+            float: left;
+        }
+        .thumbnail img {
+            width: 100%;
+        }
+        .header {
+            background-color: #eee;
+            min-height: 50px;
+            text-align: center;
+        }
+        .logo img {
+            width: 200px;
+        }
+        .menu ul {
+            padding: 0;
+        }
+        .menu ul li {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+        .menu ul li:hover ul.submenu {
+            display: block;
+            z-index: 2;
+        }
+        .menu ul li a {
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .content {
+            background-color: #ddd;
+            min-height: 500px;
+            overflow: auto;
+        }
+        .footer {
+            background-color: #ccc;
+            min-height: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+        ul.submenu {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            text-align: left;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            display: none;
+        }
+        ul.submenu li {
+            display: block;
+        }
+        ul.submenu li a {
+            display: block;
+            padding: 5px 10px;
+        }
+        .jumbotron {
+            width: 100%;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            background-color: #aaa;
+            background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8HBhUSBxQVEhUSEBcaERUVFhIWEhcVGBUWFhYTFRUkHSggGB0lGxgaITghJykrLi4uFx8zODMsNygtLisBCgoKDg0OFRAQFS0mHR0rLS0xKystLS0rLS0rLS0rKy0tLSstNy0rKy0tLS0tKy0tLTcrLSsrKy0rLS0tNystK//AABEIAKgBLAMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAgMEAQUH/8QALBABAAEDAgQFBAIDAAAAAAAAAAECAxEhQQQSMVETYXGBkSIjofCx8TJS0f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAHBEBAAMBAQEBAQAAAAAAAAAAAAECERIhMUED/9oADAMBAAIRAxEAPwD6wAw9QAAAAAAAAAAAAAAAAAAAACnibs2qY5d53CI2Vw87xq+86z/HVvtzzW4md4gatTlIAZAAAAAAAAAAAAYL1FVV+rHz5RGcfCfCXKuflnpj4Srim9cjkmfWInGk4127tFFuKOm/Wd5V07iYSARzAAAAAAAAAAAAAAAAEblEXKcVJAMdFE13pjmzjr310n8NkaRoovW83aao01+rG/bPvj5Xh1M/QAAAAAAAAAQAFCemgCIWbUWbeKUwAAFAAAAAABCu7TRP1z1covU3M8uwZKwAAAAAAAAAAAQAFAAAAAJjMApr4mmmeufTZO3di7nk2YarcW5+55/xpMe7TwlvkiZjXM6T3iNx0tWsR40ADmAAAAAAAAAAAAxcZR93M/6/mNlNVqc/Rr0jyzMZ/wCtfGTPJGkTEzifLOkT8rLVqimM299+qulf6ZGLI6AI5gAAAAAAAAAAAAAAAAAIXaeenTGfOMo2LvixOmMTj8Rla5EYnTcT10AAAUAAAAAAAAABXxFHiWsTrGac+nNCyIxGgCYACgAAAAAAAAAAy18ZjPLGufZbYveNGmmBqaTEatAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGW7aiirMRE5npOnr6rrFrwqfUvW4u28T7euztvM0Rzdcah1PxMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAFAAAAAAAAAAHJnEOgMU8ZM0ziMTss4fiJuVYq7dVdVmLM/VEzHNE5jtvTKzhrURXzRExpv+9MK6zznxpARyAAAAAAAAEZuRFOZmC5nw55euJw8ymmZj2z8K3Su/r1cjFwfNN2c56f02ozauTgAIAAAAAAAAAAAAAAAAAAAAq4miqu19qcT+J8pdsXIu280/vdYjRTyU4j2Gc9SAGgAAAAAAABlvWo8XEVcvNtttnDUp4qJmmIt4zzaZ6aa5/e4dTHsLLdEURp7zvM90kbUTTR9yczvPRIN0AAAAAAABGuqKKc1ORdpnGsa9FfGxmx7wyV2aqZ011xGO+M6eyt1rEx7L0hl4GmYpmZ3akZtGTgAIAAAAAAAAAAAAAAAAAAAAAAACAAoAAAAADkxmNVFFjH+NUxGZjHxnV3i5rpimbW1Uc0d4nRyjhaYuxVXmZ850id8QJ1O5C+imKKcU7OgKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5MZ6ugAAAAAAAAD/2Q==);
+            background-size: cover;
+            position: relative;
+            font-family: 'Raleway', sans-serif;
+            width: 100%;
+        }
+        .jumbotron h2,.jumbotron p {
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <h1></h1>
+        <div class="logo">
+            <img src="images-removebg-preview.png" width="300">
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="css.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="jumbotron">
+        <div class="overlay"></div>
+        <h2>Hallo Selamat Datang Di Website Saya</h2>
+        <p>website ini adalah project layouting pertama saya yang berisi daftar teman kelas dan profile saya</p>
+        <p>Setiap orang memiliki kelebihan dan kelemahan masing-masing.kita tidak bisa hebat dalam semua hal</p>
+        <p>awali dengan "LEARN" dan selanjutnya akhiri dengan buang huruf "L"</p>
+    </div>
+    <div class="content">
+        <h2>Daftar SISWA</h2>
+        <div class="thumbnail">
+            <img src="wonyoung icon.jpg" height="200">
+            <h2>(bibil imoet)</h2>
+             <p>kelas XI PPLG 2</p>
+        </div>
+        <div class="thumbnail">
+            <img src="17dbdabf-3b18-4bf0-bf4d-829681bbd6ca.jpg" height="200">
+            <h2>(ditak seleb)</h2>
+             <p>kelas XI PPLG 2</p>
+        </div>
+        <div class="thumbnail">
+            <img src="✎sᴀvᴇ → ғoʟʟow_♪ тнᴀɴκ ʏou 🍓.jpg" height="200">
+            <h2>(nana istigfar)</h2>
+             <p>kelas XI PPLG 2</p>
+        </div>
+        <div class="thumbnail">
+            <img src="544ba222-2a64-4f36-a52d-aa974ab538a0.jpg" height="200">
+            <h2>(luki yalili)</h2>
+             <p>kelas XI PPLG 2</p>
+        </div>
+        <div class="thumbnail">
+            <img src="115353a3-234d-4395-b26c-d302c52406cb.jpg" height="200">
+            <h2>(ana kristof)</h2>
+             <p>kelas XI PPLG 2</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Nabila Azzahra Paling imoet</p>
+    </div>
+</body>
+</html>

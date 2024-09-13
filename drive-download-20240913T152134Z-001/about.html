@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style type="text/css">
+    .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .thumbnail {
+        background-color: white;
+        text-align: center;
+        padding: 10px;
+        width: 225px;
+        margin: 10px;
+        float: left;
+    }
+    .thumbnail img {
+        width: 100%;
+    }
+    .header {
+        background-color: #eee;
+        min-height: 50px;
+        text-align: center;
+    }
+    .logo img {
+        width: 200px;
+    }
+    .menu ul {
+        padding: 0;
+    }
+    .menu ul li {
+        display: inline-block;
+        position: relative;
+        z-index: 1; /* Add this line */
+    }
+    .menu ul li:hover ul.submenu {
+        display: block;
+        z-index: 2; /* Add this line */
+    }
+    .menu ul li a {
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    .content {
+        background-color: #ddd;
+        min-height: 500px;
+        overflow: auto;
+    }
+    .footer {
+        background-color: #ccc;
+        min-height: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+    ul.submenu {
+        background-color: #eee;
+        border: 1px solid #ccc;
+        text-align: left;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        display: none;
+    }
+    ul.submenu li {
+        display: block;
+    }
+    ul.submenu li a {
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .jumbotron h1,.jumbotron p {
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="images-removebg-preview.png" width="300">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="css.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a>
+  
+        </div>
+        <div class="jumbotron">
+    <hr>
+    <h1>About Me</h1>
+    <p>haloww, nama Saya Nabil Azzahra sebaga Pelajar SMK Muhammaddiyah 1 Sukoharjo saya belajar membuat Website</p>
+    <p>Saya belajar html di sekolah SMK Muhammaddiyah 1 Sukoharjo</p>
+    <p>Saya suka cooking</p>
+    <hr>
+    <img src="c8ed6bb1-e934-4a5e-b878-c6fba1bd2aa5.jpg" height="300"></img>
+
+    <div class="footer">
+        <p>Nabila Azzahra</p>
+    </div>
+
+</div>
+</body>
+</html>
